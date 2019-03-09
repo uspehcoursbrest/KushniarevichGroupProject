@@ -73,6 +73,14 @@ header .icon-user {
 header .icon-phone {
     font-size: 20px;
 }
+.banner .sale {
+    width: 305px;
+    height: 360px;
+}
+.banner .slider {
+    width: 640px;
+    height: 360px;
+}
 .advantages .item span {
     font-size: 14px;
     font-weight: bold;
@@ -228,7 +236,22 @@ footer .socLinks a {
     line-height: 22px;
     color: #333333;
 }
+
+.form [type="file"] + label  {
+    font-size: 13px;
+    line-height: 22px;
+    color: #229647;
+    text-decoration: underline;
+}
+
 .form label {
+    font-size: 13px;
+    line-height: 22px;
+    font-style: italic;
+    color: #666666;
+}
+
+.form label + span {
     font-size: 13px;
     line-height: 22px;
     font-style: italic;
