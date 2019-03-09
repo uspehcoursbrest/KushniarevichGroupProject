@@ -22,16 +22,25 @@ ul {
     margin: 0 auto;
     padding: 0 15px;
 }
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
 header .login {
     font-size: 13px;
     line-height: 20px;
     color: #0069b4;
 }
-header .menu {
+header .menu a {
     font-size: 13px;
     line-height: 25px;
     color: #333333;
+}
+header .menu li {
+    display: inline-block;
+    margin-right: 20px;
 }
 header .phone {
     font-size: 20px;
@@ -86,14 +95,26 @@ header .icon-phone {
     font-weight: bold;
     line-height: 17px;
     color: #333333;
+    display: block;
 }
 .advantages .item p {
     font-size: 12px;
     line-height: 14px;
     color: #666666;
 }
+.advantages {
+    width: calc(100% - 320px);
+    float: left;
+}
+.advantages .item {
+    width: 25%;
+    float: left;
+}
 .subscribe {
     background-color: #63b849;
+    width: 320px;
+    float: left;
+    padding: 20px;
 }
 .subscribe label {
     font-size: 16px;
@@ -105,6 +126,7 @@ header .icon-phone {
     color: #999999;
     border: none;
     padding-left: 10px;
+    width: 100%;
 }
 .subscribe button {
     font-size: 13px;
@@ -119,10 +141,18 @@ header .icon-phone {
     font-size: 12px;
     color: rgba(255,255,255,0.5);
 }
+.advSab + .catalog  {
+    margin-top: 30px;
+}
+.filter + .cards {
+    margin-top: 30px;
+}
 .filter li {
     font-size: 13px;
     line-height: 16px;
     border-bottom: 1px dashed #666666;
+    display: inline-block;
+    margin-right: 20px;
 }
 .filter li a {
     text-decoration: none;
@@ -199,6 +229,11 @@ header .icon-phone {
     line-height: 45px;
     color: #999999;
 }
+.tabs li {
+    display: inline-block;
+    padding: 0px 15px;
+
+}
 .info .tabContent {
     font-size: 12px;
     line-height: 18px;
@@ -219,6 +254,22 @@ footer a {
 }
 footer .socLinks a {
     font-size: 21px;
+}
+.footMenu {
+    width: 50%;
+    float: left;
+}
+.footMenu>li {
+    width: 50%;
+    float: left;
+}
+.footContacts {
+    width: 25%;
+    float: left;
+}
+.copyright {
+    width: 25%;
+    float: left;
 }
 .content .caption a{
     font-size: 12px;
@@ -298,4 +349,44 @@ footer .socLinks a {
     background-color: #259c47;
     border: none;
     text-decoration: none;
+}
+
+.content .breadcrumbs li,
+.content .breadcrumbs li a {
+    font-size: 12px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #999999;
+}
+
+.content .news h1 {
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.content .news h2 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.content .news span {
+    font-size: 12px;
+    line-height: 22px;
+    color: #aaaaaa;
+}
+
+.content .news p {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.content .moreNews {
+    font-size: 13px;
+    line-height: 22px;
+    color: #0069b4;
 }
