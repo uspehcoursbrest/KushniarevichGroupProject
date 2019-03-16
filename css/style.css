@@ -27,7 +27,26 @@ ul {
     display: block;
     clear: both;
 }
+.invisLink {
+    position: relative;
+    z-index: 1;
+}
+.invisLink>a {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
 
+}
+header {
+    padding-top: 27px;
+}
 header .login {
     font-size: 13px;
     line-height: 20px;
@@ -102,6 +121,7 @@ header .icon-phone {
 .banner {
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 .banner .sale {
     width: 305px;
@@ -188,8 +208,14 @@ header .icon-phone {
     text-decoration: none;
     color: #666666;
 }
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
 .card {
     position: relative;
+    border-bottom: 1px solid #e4e4e4;
 }
 .status {
     position: absolute;
@@ -205,17 +231,31 @@ header .icon-phone {
     background-color: #6eddcc;
 }
 .card .img {
-    width: 220px;
     height: 220px;
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+.card .content .bay {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.card .content {
+    min-height: 110px;
+    position: relative;
+    padding-top: 20px;
+
+}
 .card .title {
     font-size: 15px;
     line-height: 22px;
     color: #333333;
+    display: block;
 }
 .card a {
     font-size: 15px;
