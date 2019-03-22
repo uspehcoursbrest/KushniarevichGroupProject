@@ -635,3 +635,43 @@ footer .socLinks a {
     background-color: #ea5b0c;
     border: none;
 }
+/*КОРПОРАТИВНЫМ КЛИЕНТАМ*/
+.corpClients .nameOrg input {
+    width: 283px;
+    height: 28px;
+    border: 1px solid #d6d6d6;
+}
+.corpClients .contact input {
+    width: 283px;
+    height: 28px;
+    border: 1px solid #d6d6d6;
+}
+.corpClients .phone input {
+    width: 283px;
+    height: 28px;
+    border: 1px solid #d6d6d6;
+}
+.corpClients .figure select {
+    width: 86px;
+    height: 27px;
+}
+.corpClients .date input {
+    width: 108px;
+    height: 28px;
+}
+.corpClients .info textarea {
+    width: 283px;
+    height: 123px;
+}
+.corpClients .form {
+    float: left;
+}
+.content .caption {
+    margin-bottom: 26px;
+}
+.corpClients .product {
+    padding-left: 344px;
+}
+.corpClients .product div>p {
+    margin-bottom: 25px;
+}
