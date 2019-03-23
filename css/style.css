@@ -384,84 +384,270 @@ footer .socLinks a {
     float: left;
 }
 /*Корпоративным клиентам*/
-.content .caption a{
+/*CorpClients*/
+
+header .menu  .corp {
+    color: #ff7200;
+}
+
+.content .caption {
     font-size: 12px;
-    line-height: 12px;
+    line-height: 22px;
+    color: #999999;
+    padding-top: 20px;
+}
+
+.content .caption a {
     text-decoration: none;
     color: #999999;
 }
-.content .caption span {
-    font-size: 12px;
-    line-height: 12px;
-    color: #999999;
+
+.corpClients .form > span {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+    margin-top: 25px;
+    display: block;
 }
-.corpClients .form .order {
+
+.corpClients form {
+    background-color: #f9f9f9;
+    margin-top: 22px;
+    padding: 20px 10px;
+}
+
+.corpClients .form {
+    float: left;
+    width: 300px;
+}
+
+.corpClients .product {
+    float: right;
+    width: 635px;
+    padding-right: 15px;
+}
+
+.corpClients form div + div {
+    padding-top: 10px;
+}
+
+.corpClients form label {
+    font-size: 13px;
+    line-height: 22px;
+    font-style: italic;
+    color: #666666;
+    display: block;
+}
+
+.corpClients form .nameOrg input,
+.corpClients form .contact input,
+.corpClients form .phone input {
+    display: block;
+    width: 282px;
+    height: 30px;
+    border: 1px solid #d6d6d6;
+}
+
+.corpClients .logo > div label {
+    font-size: 13px;
+    line-height: normal;
+    font-style: normal;
+    color: #333333;
+
+}
+
+.corpClients .logo span {
+    font-size: 11px;
+    color: #999999;
+    display: block;
+}
+
+.corpClients .logo > div {
+    float: left;
+    width: 150px;
+}
+
+.corpClients .logo ul {
+    float: right;
+    display: block;
+    vertical-align: top;
+    width: 108px;
+}
+
+.corpClients .logo li {
+    display: inline-block;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.corpClients .logo li label {
+    font-size: 13px;
+    line-height: 22px;
+    font-style: normal;
+    color: #666666;
+    padding-right: 30px;
+    position: relative;
+    margin-right: -30px;
+
+}
+
+.radBtn {
+    display: none;
+}
+
+.radBtn:not(checked) + label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.radBtn:not(checked) + label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 32px;
+    width: 8px;
+    height: 8px;
+    background-color: #51bf87;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.radBtn:checked + label::before {
+    border-color: #51bf87;
+}
+
+.radBtn:checked + label::after {
+    opacity: 1;
+}
+
+.radBtn + label {
+    cursor: pointer;
+}
+
+.logo li * {
+    float: left;
+}
+
+.corpClients .input input {
+    display: none;
+}
+
+.corpClients .input label {
+    font-size: 13px;
+    line-height: 22px;
+    font-style: normal;
+    text-decoration: underline;
+    color: #229647;
+}
+
+.corpClients .input span {
+    font-size: 13px;
+    color: #999999;
+    display: block;
+}
+
+.corpClients .figure select {
+    display: block;
+    height: 30px;
+    width: 85px;
+    border: 1px solid #d6d6d6;
+}
+
+.corpClients .figure option {
     font-size: 13px;
     line-height: 22px;
     color: #333333;
 }
 
-.form [type="file"] + label  {
+.corpClients .date input {
     font-size: 13px;
-    line-height: 22px;
-    color: #229647;
-    text-decoration: underline;
+    line-height: 30px;
+    color: #333333;
+    display: block;
+    float: left;
+    width: 107px;
+    border: 1px solid #d6d6d6;
 }
 
-.form label {
-    font-size: 13px;
-    line-height: 22px;
-    font-style: italic;
-    color: #666666;
+.corpClients .date span {
+    width: 20px;
+    height: 17px;
+    color: #51bf87;
+    margin-left: 10px;
+    margin-top: 7px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    float: left;
 }
 
-.form label + span {
-    font-size: 13px;
-    line-height: 22px;
-    font-style: italic;
-    color: #666666;
+.corpClients .info textarea {
+    width: 280px;
+    height: 125px;
+    border: 1px solid #d6d6d6;
 }
-.form .a3 {
-    font-size: 13px;
-    font-style: normal;
-}
-.form .a1 {
-    font-size: 13px;
-    line-height: 22px;
-    font-style: normal;
-}
-.form .a2 {
-    font-size: 11px;
-    font-style: normal;
-}
-.form button {
+
+.corpClients form button {
     font-size: 14px;
-    line-height: 32px;
-    text-align: center;
+    line-height: 33px;
     color: #ffffff;
-    width: 100px;
     background-color: #ff7200;
     border: none;
+    margin-top: 20px;
+    width: 130px;
+
 }
+
+.product > div {
+    margin-top: 30px;
+}
+
+.product > div:first-child {
+    margin-top: 25px;
+}
+
 .product span {
     font-size: 25px;
     line-height: 22px;
+    font-weight: 600;
     color: #333333;
 }
+
 .product p {
     font-size: 13px;
-    line-height: 22px;
+    line-height: 19px;
     color: #333333;
 }
+
+.product > div p:nth-child(2) {
+    padding-top: 20px
+}
+
+.product p:last-child {
+    padding-top: 35px;
+}
+
 .product a {
-    font-size: 13px;
-    line-height: 37px;
-    text-align: center;
+    font-size: 14px;
+    line-height: 33px;
+    width: 190px;
     color: #ffffff;
-    width: 185px;
-    background-color: #259c47;
-    border: none;
+    background-color: #64ba4a;
     text-decoration: none;
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 80px;
 }
 /*Новости подробно*/
 .content .breadcrumbs li,
@@ -548,21 +734,60 @@ footer .socLinks a {
 .radioBtn + label {
     cursor: pointer;
 }
+.content .breadcrumbs li,
+.content .breadcrumbs li a {
+    font-size: 12px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #999999;
+    display: inline-block;
+}
+
+.content .breadcrumbs li + li {
+    margin-left: 3px;
+}
+
+.content {
+    position: relative;
+}
+
+.ofor::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #00a48c;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    margin-bottom: -138px;
+    margin-left: 268px;
+}
+
 .container .checkout h1 {
     font-size: 25px;
     line-height: 22px;
     font-weight: 600;
     color: #333333;
+    padding: 24px 0px;
+}
+
+.citySelection {
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 26px;
 }
 
 .content .citySelection label {
     font-size: 13px;
+    display: block;
     line-height: 22px;
     color: #666666;
     font-style: italic;
+    padding-bottom: 6px;
 }
 
-.content .citySelection select* {
+.content .citySelection select * {
     font-size: 13px;
     line-height: 22px;
     color: #666666;
@@ -573,22 +798,37 @@ footer .socLinks a {
     line-height: 22px;
     font-weight: 600;
     color: #333333;
+    margin: 22px 0px 26px;
 }
 
-.delivery ul li label* {
+.delivery ul li label * {
     font-size: 13px;
     line-height: 19px;
     color: #333333;
+}
+
+.delivery .orderList {
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .delivery ul p {
     font-size: 12px;
     line-height: 18px;
     color: #666666;
+    padding-bottom: 23px;
 }
 
 .delivery ul .orange {
     color: #f26522;
+    margin-top: -24px;
+}
+
+.delivery label {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+    font-style: normal;
+    font-weight: 600;
 }
 
 .content .deliveryAddress label {
@@ -596,10 +836,23 @@ footer .socLinks a {
     line-height: 22px;
     color: #666666;
     font-style: italic;
+    display: block;
+    padding-bottom: 5px;
 }
 
 .content .deliveryAddress span {
     color: #ed1c24;
+}
+
+.deliveryAddress {
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 23px;
+}
+
+.deliveryAddress .message {
+    display: block;
+    float: left;
+    margin-bottom: 50px;
 }
 
 .content .paymentMeth label {
@@ -607,19 +860,33 @@ footer .socLinks a {
     line-height: 19px;
     color: #333333;
     font-style: normal;
+    font-weight: 600;
 }
 
 .content .paymentMeth p {
     font-size: 12px;
     line-height: 18px;
     color: #666666;
+    padding-top: 9px;
 }
 
-.content .yourDate label{
+.paymentMeth {
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 21px;
+
+}
+
+.yourDate {
+    padding-top: 20px;
+}
+
+.content .yourDate label {
     font-size: 13px;
     line-height: 22px;
     color: #666666;
     font-style: italic;
+    display: block;
+    padding-top: 15px;
 }
 
 .content .yourDate span {
@@ -634,44 +901,82 @@ footer .socLinks a {
     width: 185px;
     background-color: #ea5b0c;
     border: none;
+    margin-top: 34px;
+    margin-bottom: 67px;
 }
-/*КОРПОРАТИВНЫМ КЛИЕНТАМ*/
-.corpClients .nameOrg input {
-    width: 283px;
-    height: 28px;
-    border: 1px solid #d6d6d6;
+
+.content .checkout .citySelection select {
+    width: 285px;
+    height: 25px;
 }
-.corpClients .contact input {
-    width: 283px;
-    height: 28px;
-    border: 1px solid #d6d6d6;
+
+.deliveryAddress input {
+    width: 288px;
+    height: 25px;
 }
-.corpClients .phone input {
-    width: 283px;
-    height: 28px;
-    border: 1px solid #d6d6d6;
+
+.numHouse div + div {
+    margin-left: 34px;
 }
-.corpClients .figure select {
-    width: 86px;
-    height: 27px;
-}
-.corpClients .date input {
-    width: 108px;
-    height: 28px;
-}
-.corpClients .info textarea {
-    width: 283px;
-    height: 123px;
-}
-.corpClients .form {
+
+.deliveryAddress .numHouse {
+    width: 290px;
     float: left;
 }
-.content .caption {
-    margin-bottom: 26px;
+
+.deliveryAddress .numHouse div:first-child {
+    float: left;
 }
-.corpClients .product {
-    padding-left: 344px;
+
+.deliveryAddress .numHouse div:nth-child(2) {
+    float: left;
 }
-.corpClients .product div>p {
-    margin-bottom: 25px;
+
+.deliveryAddress .numHouse div:last-child {
+    float: left;
+}
+
+.numHouse div:first-child input {
+    width: 58px;
+}
+
+.numHouse div:nth-child(2) input {
+    width: 58px;
+}
+
+.numHouse div:last-child input {
+    width: 100px;
+}
+.content .yourDate input {
+    width: 288px;
+    height: 25px;
+}
+
+.content .news h1 {
+    padding: 25px 0px 50px;
+}
+
+.content .news h2 {
+    margin: 0;
+}
+
+.content .newsImg {
+    background-color: #b3b3b3;
+    width: 100%;
+    height: 205px;
+    margin: 20px 0;
+}
+
+.newsContent p + p {
+    padding-top: 30px;
+}
+
+.news .moreNews {
+    display: inline-block;
+    margin: 40px 0;
+}
+
+.deliveryAddress textarea {
+    width: 285px;
+    height: 100px;
 }
