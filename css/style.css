@@ -65,10 +65,14 @@ header .login {
     line-height: 20px;
     color: #0069b4;
 }
+header .menu {
+    margin-top: 37px;
+}
 header .menu a {
     font-size: 13px;
     line-height: 25px;
     color: #333333;
+
 }
 header .menu li {
     display: inline-block;
@@ -93,6 +97,7 @@ header .timing {
     font-size: 13px;
     line-height: 19px;
     color: #999999;
+    margin-top: 10px;
 }
 header .basked {
     font-size: 13px;
@@ -103,6 +108,7 @@ header .basked {
     padding-left: 28px;
     background-repeat: no-repeat;
     background-position: left center;
+    margin-top: 30px;
 }
 header .basked span {
     color: #1a9547;
@@ -382,6 +388,8 @@ footer .socLinks a {
 .footMenu {
     width: 50%;
     float: left;
+    margin-top: 20px;
+    margin-bottom: 20px ;
 }
 .footMenu>li {
     width: 50%;
@@ -390,10 +398,15 @@ footer .socLinks a {
 .footContacts {
     width: 25%;
     float: left;
+    margin-top: 20px;
+    margin-bottom: 20px
 }
 .copyright {
     width: 25%;
     float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right;
 }
 /*Корпоративным клиентам*/
 /*CorpClients*/
@@ -424,7 +437,7 @@ header .menu  .corp {
 
 .corpClients form {
     background-color: #f9f9f9;
-    margin-top: 22px;
+    margin-top: 15px;
     padding: 20px 10px;
 }
 
@@ -445,7 +458,7 @@ header .menu  .corp {
 
 .corpClients form label {
     font-size: 13px;
-    line-height: 22px;
+    line-height: 16px;
     font-style: italic;
     color: #666666;
     display: block;
@@ -641,7 +654,7 @@ header .menu  .corp {
 }
 
 .product > div p:nth-child(2) {
-    padding-top: 20px
+    padding-top: 4px
 }
 
 .product p:last-child {
@@ -757,6 +770,7 @@ header .menu  .corp {
     text-decoration: none;
     color: #999999;
     display: inline-block;
+    margin-top: 10px;
 }
 
 .content .breadcrumbs li + li {
