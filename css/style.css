@@ -145,10 +145,16 @@ header .icon-phone {
 .banner .sale {
     width: 305px;
     height: 360px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .banner .slider {
     width: 640px;
     height: 360px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .advantages .item span {
     font-size: 14px;
@@ -226,6 +232,9 @@ header .icon-phone {
 .filter li a {
     text-decoration: none;
     color: #666666;
+}
+.filterSelect {
+    display: none;
 }
 .cards {
     display: grid;
@@ -377,6 +386,7 @@ footer {
     line-height: 22px;
     color: #ffffff;
     background-color: #64ba4a;
+    position: relative;
 }
 footer a {
     text-decoration: none;
@@ -384,6 +394,9 @@ footer a {
 }
 footer .socLinks a {
     font-size: 21px;
+}
+.socLinks div {
+    display: inline-block;
 }
 .footMenu {
     width: 50%;
