@@ -59,7 +59,6 @@
         display: none;
     }
     .filterSelect {
-        /*float: left;*/
         display: block;
     }
     .cards {
@@ -104,6 +103,21 @@
 @media (max-width: 767px) {
     .container {
         width: 100%;
+    }
+    header .left ul{
+        display: none;
+    }
+    header .left a{
+        display: none;
+    }
+    header .left .leftSelect {
+        display: block;
+    }
+    header .left .leftSelect select {
+        width: 33.3333%;
+    }
+    header .logo img{
+
     }
 
 }
