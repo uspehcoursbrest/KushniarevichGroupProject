@@ -22,6 +22,10 @@
     .widgets {
         display: none;
     }
+
+    header .leftSelect {
+        display: none;
+    }
 }
 @media (max-width: 991px) {
     .container {
@@ -98,11 +102,17 @@
         right: 0;
         text-align: center;
     }
+    header .leftSelect {
+        display: none;
+    }
 
 }
 @media (max-width: 767px) {
     .container {
         width: 100%;
+    }
+    header {
+        background-color: #64bb4a;
     }
     header .left ul{
         display: none;
@@ -116,8 +126,51 @@
     header .left .leftSelect select {
         width: 33.3333%;
     }
-    header .logo img{
-
+    header .logo {
+        width: 30%;
     }
+    header .right {
+        display: none;
+    }
+    header .phoneBasked {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    .content .banner {
+        display: none;
+    }
+    .content .advSab{
+        display: none;
+    }
+    .cards {
+        grid-template-columns: repeat(1, 2fr);
+    }
+    .info .tabs {
+        display: none;
+    }
+    .tabContent {
+        display: none;
+    }
+    .inputPhone label {
+        font-size: 14px;
+    }
+    .inputPhone {
+
+        position: relative;
+        z-index: 1;
+        margin-bottom: 20px;
+        margin-left: 43px;
+    }
+    .inputPhone button {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        background-color: #259c48;
+        top: 24px;
+        left: 160px;
+    }
+
 
 }

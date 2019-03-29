@@ -78,9 +78,9 @@ header .menu li {
     display: inline-block;
     margin-right: 20px;
 }
-/*.leftSelect {*/
-    /*display: none;*/
-/*}*/
+header .leftSelect {
+    display: none;
+}
 header .phone {
     font-size: 20px;
     line-height: 20px;
@@ -366,6 +366,7 @@ header .icon-phone {
     position: relative;
     display: block;
 }
+
 .info .title::before {
     content: "";
     display: block;
@@ -383,6 +384,10 @@ header .icon-phone {
 .info .title.activ::before {
     transform: rotate(180deg);
 }
+.content .inputPhone form {
+    display: none;
+}
+
 
 footer {
     font-size: 13px;
