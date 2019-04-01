@@ -57,6 +57,11 @@ button:hover {
     text-indent: 200%;
     white-space: nowrap;
 }
+.up {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
 header {
     padding-top: 27px;
 }
@@ -158,6 +163,7 @@ header .icon-phone {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 30px;
 }
 .advantages .item span {
     font-size: 14px;
@@ -196,6 +202,7 @@ header .icon-phone {
     border: none;
     padding-left: 10px;
     width: 100%;
+    margin-top: 20px;
 }
 .subscribe button {
     font-size: 13px;
@@ -207,6 +214,7 @@ header .icon-phone {
     border: none;
     display: table-cell;
     vertical-align: middle;
+    margin-top: 15px;
 }
 .subscribe .wrap span {
     display: table-cell;
@@ -271,6 +279,12 @@ header .icon-phone {
     position: relative;
     border-bottom: 1px solid #e4e4e4;
     z-index: 1;
+}
+.status.discount {
+    background-color: #ffed03;
+}
+.status.new {
+    background-color: #78ec71;
 }
 .status {
     position: absolute;
@@ -351,6 +365,8 @@ header .icon-phone {
     line-height: 22px;
     text-align: center;
     color: #666666;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 .widgets .item:first-child,
 .widgets .item:last-child {
@@ -433,8 +449,8 @@ footer .socLinks a {
 .footMenu {
     width: 50%;
     float: left;
-    margin-top: 20px;
-    margin-bottom: 20px ;
+    margin-top: 30px;
+    margin-bottom: 30px ;
 }
 .footMenu>li {
     width: 50%;
@@ -443,14 +459,14 @@ footer .socLinks a {
 .footContacts {
     width: 25%;
     float: left;
-    margin-top: 20px;
-    margin-bottom: 20px
+    margin-top: 30px;
+    margin-bottom: 30px
 }
 .copyright {
     width: 25%;
     float: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: right;
 }
 /*Корпоративным клиентам*/

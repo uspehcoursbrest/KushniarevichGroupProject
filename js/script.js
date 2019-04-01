@@ -17,5 +17,22 @@ $(document).ready(function () {
         }
     })
 
+    var btnUp = $('.up');
 
-})
+    btnUp.hide();
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            btnUp.fadeIn();
+        } else {
+            btnUp.fadeOut();
+        }
+
+    });
+
+    btnUp.click(function () {
+        $('body,html').animate({scrollTop: 0}, 500);
+        return false;
+
+    });
+});
