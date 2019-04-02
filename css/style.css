@@ -65,6 +65,9 @@ button:hover {
 header {
     padding-top: 27px;
 }
+header .logoModile img:nth-child(2) {
+    display: none;
+}
 header .login {
     font-size: 13px;
     line-height: 20px;

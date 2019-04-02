@@ -124,7 +124,7 @@
         display: block;
     }
     header .left .leftSelect select {
-        width: 33.3333%;
+        width: 62px;
     }
     header .logo {
         width: 30%;
@@ -171,6 +171,15 @@
         top: 24px;
         left: 160px;
     }
+    header .logo img:nth-child(1) {
+        display: none;
+    }
+    header .baskedPhone {
+        float: right;
+        margin-top: 10px;
+        margin-right: -42px;
+    }
+
 
 
 }
