@@ -35,4 +35,14 @@ $(document).ready(function () {
         return false;
 
     });
+    var slider = $('.slides');
+    slider.owlCarousel({
+        items: 1,
+        dotsContainer: '.dots',
+        loop: true,
+        autoplay: true,
+        autoplayHoverPause: true
+    })
+    $("#tabs").tabs();
+    $('select').selectric();
 });
